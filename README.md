@@ -1,16 +1,18 @@
+<pre>
 # Text-Classification-Transformers
 Fine-tuning transformer models for text classification
 
-.
-├── configs                 # training configuration jason files.
+
+.\
+├── configs                            # training configuration.
 ├── data  ──:── banking77              # Multi-cLass Intent classification dataset
-├           ├── drug_review_raw        # Multi-cLass Condiction Prediction based on drug review raw dataset 
-├           └── drug_review_straified  # Stratified data splits for drug review 
+├           ├── drug_review_raw        # Multi-cLass Condiction Prediction based on drug review raw dataset
+├           └── drug_review_straified  # Stratified data splits for drug review
 ├── models                             # For customised model modules
 ├── results                            # Storing model checkpoints and logs
-├── finetune.py                        # Main script for finetuing the model 
+├── finetune.py                        # Main script for finetuing the model
 ├── Pipfile                            
-├── Pipfile.lock
+├── Pipfile.lock                       
 ├── preprocessing.ipynb                # Notebook for preprocessing and stratified sampling of the drug dataset
 ├── presentation.pdf                   # Slides for the presentation
 ├── README.md                          
@@ -62,3 +64,4 @@ To enable LoRA add a "lora_config" field to the configuration file.
         "lora_dropout":0.1
     }
 }
+</pre>
