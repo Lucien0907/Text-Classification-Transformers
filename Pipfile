@@ -1,0 +1,38 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[[source]]
+url = "https://download.pytorch.org/whl/cu113"
+verify_ssl = true
+name = "downloadpytorch-253"
+
+[[source]]
+url = "https://download.pytorch.org/whl/cu113"
+verify_ssl = true
+name = "downloadpytorch-159"
+
+[[source]]
+url = "https://download.pytorch.org/whl/cu113"
+verify_ssl = true
+name = "downloadpytorch-817"
+
+[packages]
+pandas = "*"
+transformers = "==4.27.1"
+datasets = "*"
+accelerate = "==0.17.1"
+evaluate = "==0.4.0"
+tensorboard = "*"
+scikit-learn = "*"
+torch = {version = "*", index = "downloadpytorch-253"}
+torchvision = {version = "*", index = "downloadpytorch-159"}
+torchaudio = {version = "*", index = "downloadpytorch-817"}
+numpy = "*"
+
+[dev-packages]
+ipykernel = "*"
+
+[requires]
+python_version = "3.10"
